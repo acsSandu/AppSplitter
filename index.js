@@ -7,6 +7,21 @@ const command = process.argv[2]; // 'split' or 'join'
 const filePath = process.argv[3]; // The file or base name
 const CHUNK_SIZE = 50 * 1024 * 1024; // 50MB
 
+// Help Menu
+if (command === "--help" || command === "-h" || !command || !filePath) {
+  console.log(`
+    Zip Tool CLI - Split & Join files for GitHub
+    
+    Usage:
+      zip-tool split <filename>   (Splits into 50MB chunks)
+      zip-tool join <filename>    (Joins chunks back into original file)
+      
+    Example:
+      zip-tool split archive.zip
+    `);
+  process.exit(0);
+}
+
 if (!command || !filePath) {
   console.error("Usage: node index.js [split|join] [filename]");
   process.exit(1);

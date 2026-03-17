@@ -8,7 +8,8 @@
   },
   "scripts": {
     "split": "node index.js split",
-    "join": "node index.js join"
+    "join": "node index.js join",
+    "prepublishOnly": "npm test && echo \"Ready to publish!\""
   },
   "files": [
     "index.js",
@@ -22,5 +23,5 @@
     "join"
   ],
   "author": "Sandu A",
-  "license": "ISC"
+  "license": "MIT"
 }
