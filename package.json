@@ -1,0 +1,16 @@
+{
+  "name": "appsplitter",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "split": "node index.js split",
+    "join": "node index.js join"
+  },
+  "keywords": [
+    "split",
+    "join"
+  ],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
