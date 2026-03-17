@@ -8,8 +8,7 @@
   },
   "scripts": {
     "split": "node index.js split",
-    "join": "node index.js join",
-    "prepublishOnly": "npm test && echo \"Ready to publish!\""
+    "join": "node index.js join"
   },
   "files": [
     "index.js",
