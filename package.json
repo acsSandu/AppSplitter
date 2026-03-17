@@ -1,16 +1,26 @@
 {
-  "name": "appsplitter",
-  "version": "1.0.0",
+  "name": "simple-splitter-tool",
+  "version": "1.1.0",
+  "description": "CLI tool to split and join large files",
   "main": "index.js",
+  "bin": {
+    "simple-splitter-tool": "./index.js"
+  },
   "scripts": {
     "split": "node index.js split",
     "join": "node index.js join"
+  },
+  "files": [
+    "index.js",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "keywords": [
     "split",
     "join"
   ],
-  "author": "",
-  "license": "ISC",
-  "description": ""
+  "author": "Sandu A",
+  "license": "ISC"
 }
